@@ -1,0 +1,211 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\1.jpg" />
+    <Content Remove="wwwroot\images\2.jpg" />
+    <Content Remove="wwwroot\images\ab1.jpg" />
+    <Content Remove="wwwroot\images\ab2.jpg" />
+    <Content Remove="wwwroot\images\ab3.jpg" />
+    <Content Remove="wwwroot\images\arrow-left.png" />
+    <Content Remove="wwwroot\images\arrow-right.png" />
+    <Content Remove="wwwroot\images\b1.jpg" />
+    <Content Remove="wwwroot\images\b2.jpg" />
+    <Content Remove="wwwroot\images\b3.jpg" />
+    <Content Remove="wwwroot\images\b4.jpg" />
+    <Content Remove="wwwroot\images\b5.jpg" />
+    <Content Remove="wwwroot\images\b6.jpg" />
+    <Content Remove="wwwroot\images\b7.jpg" />
+    <Content Remove="wwwroot\images\b8.jpg" />
+    <Content Remove="wwwroot\images\banner1.jpg" />
+    <Content Remove="wwwroot\images\banner2.jpg" />
+    <Content Remove="wwwroot\images\banner3.jpg" />
+    <Content Remove="wwwroot\images\fb.png" />
+    <Content Remove="wwwroot\images\ins.png" />
+    <Content Remove="wwwroot\images\li.png" />
+    <Content Remove="wwwroot\images\line-edu.mp4" />
+    <Content Remove="wwwroot\images\logo-icon.png" />
+    <Content Remove="wwwroot\images\media-img.png" />
+    <Content Remove="wwwroot\images\team1.jpg" />
+    <Content Remove="wwwroot\images\team2.jpg" />
+    <Content Remove="wwwroot\images\team3.jpg" />
+    <Content Remove="wwwroot\images\team4.jpg" />
+    <Content Remove="wwwroot\images\tw.png" />
+    <Content Remove="wwwroot\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\js\jquery-3.3.1.min.js" />
+    <Content Remove="wwwroot\js\theme-change.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\style-starter.css" />
+    <None Include="wwwroot\images\1.jpg" />
+    <None Include="wwwroot\images\2.jpg" />
+    <None Include="wwwroot\images\ab1.jpg" />
+    <None Include="wwwroot\images\ab2.jpg" />
+    <None Include="wwwroot\images\ab3.jpg" />
+    <None Include="wwwroot\images\arrow-left.png" />
+    <None Include="wwwroot\images\arrow-right.png" />
+    <None Include="wwwroot\images\b1.jpg" />
+    <None Include="wwwroot\images\b2.jpg" />
+    <None Include="wwwroot\images\b3.jpg" />
+    <None Include="wwwroot\images\b4.jpg" />
+    <None Include="wwwroot\images\b5.jpg" />
+    <None Include="wwwroot\images\b6.jpg" />
+    <None Include="wwwroot\images\b7.jpg" />
+    <None Include="wwwroot\images\b8.jpg" />
+    <None Include="wwwroot\images\banner1.jpg" />
+    <None Include="wwwroot\images\banner2.jpg" />
+    <None Include="wwwroot\images\banner3.jpg" />
+    <None Include="wwwroot\images\fb.png" />
+    <None Include="wwwroot\images\ins.png" />
+    <None Include="wwwroot\images\li.png" />
+    <None Include="wwwroot\images\line-edu.mp4" />
+    <None Include="wwwroot\images\logo-icon.png" />
+    <None Include="wwwroot\images\media-img.png" />
+    <None Include="wwwroot\images\team1.jpg" />
+    <None Include="wwwroot\images\team2.jpg" />
+    <None Include="wwwroot\images\team3.jpg" />
+    <None Include="wwwroot\images\team4.jpg" />
+    <None Include="wwwroot\images\tw.png" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\js\theme-change.js" />
+    <None Include="wwwroot\sidebar\.DS_Store" />
+    <None Include="wwwroot\sidebar\css\.DS_Store" />
+    <None Include="wwwroot\sidebar\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\sidebar\css\bootstrap\mixins\.DS_Store" />
+    <None Include="wwwroot\sidebar\fonts\.DS_Store" />
+    <None Include="wwwroot\sidebar\images\.DS_Store" />
+    <None Include="wwwroot\sidebar\js\.DS_Store" />
+    <None Include="wwwroot\sidebar\js\bootstrap.min.js" />
+    <None Include="wwwroot\sidebar\js\jquery.min.js" />
+    <None Include="wwwroot\sidebar\js\main.js" />
+    <None Include="wwwroot\sidebar\js\popper.js" />
+    <None Include="wwwroot\sidebar\scss\.DS_Store" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\.DS_Store" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\bootstrap-grid.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\bootstrap-reboot.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\bootstrap.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_alert.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_background-variant.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_badge.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_border-radius.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_buttons.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_caret.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_clearfix.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_deprecate.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_float.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_forms.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_gradients.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_grid.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_hover.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_image.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_list-group.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_lists.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_pagination.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_reset-text.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_resize.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_screen-reader.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_size.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_table-row.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_text-hide.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_transition.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\mixins\_visibility.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_align.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_background.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_borders.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_clearfix.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_display.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_embed.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_flex.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_float.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_overflow.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_position.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_screenreaders.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_shadows.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_sizing.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_spacing.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_stretched-link.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_text.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\utilities\_visibility.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\vendor\_rfs.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_alert.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_badge.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_breadcrumb.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_button-group.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_buttons.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_card.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_carousel.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_close.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_code.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_custom-forms.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_dropdown.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_forms.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_functions.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_grid.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_images.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_input-group.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_jumbotron.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_list-group.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_media.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_mixins.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_modal.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_nav.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_navbar.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_pagination.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_popover.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_print.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_progress.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_reboot.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_root.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_spinners.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_tables.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_toasts.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_tooltip.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_transitions.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_type.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_utilities.scss" />
+    <None Include="wwwroot\sidebar\scss\bootstrap\_variables.scss" />
+    <None Include="wwwroot\sidebar\scss\style.scss" />
+    <None Include="wwwroot\webfonts\fa-brands-400.eot" />
+    <None Include="wwwroot\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\webfonts\fa-brands-400.ttf" />
+    <None Include="wwwroot\webfonts\fa-brands-400.woff" />
+    <None Include="wwwroot\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\webfonts\fa-regular-400.eot" />
+    <None Include="wwwroot\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\webfonts\fa-regular-400.ttf" />
+    <None Include="wwwroot\webfonts\fa-regular-400.woff" />
+    <None Include="wwwroot\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\webfonts\fa-solid-900.eot" />
+    <None Include="wwwroot\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\webfonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\webfonts\fa-solid-900.woff" />
+    <None Include="wwwroot\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<PfeApp.Models.EtudPfe>
+
+@{
+    ViewData["Title"] = "Index";
+
+}
+    @if (User.Identity.IsAuthenticated)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    <a asp-action="Create"><i class="fa fa-user-plus" aria-hidden="true"></i> Affecter un Etudiant a un Pfe </a>
+                </p>
+            </div>
+            <br />
+
+        </div>
+
+        <br />
+
+        <table id="myTable" class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EtudiantId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Etudiant)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PfeTitle)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Rapporteur)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.President)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Encadrant)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Societe)
+                    </th>
+
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EtudiantId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Etudiant)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PfeTitle)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rapporteur)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.President)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Encadrant)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Societe)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id"> <i class="fa fa-eye" aria-hidden="true"></i> </a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">  <i class="fa fa-info-circle" aria-hidden="true"></i> </a>|
+                            <a asp-action="Delete" asp-route-id="@item.Id"> <i class="fa fa-trash" aria-hidden="true"></i> </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+}

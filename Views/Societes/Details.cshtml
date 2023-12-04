@@ -1,0 +1,39 @@
+﻿@model PfeApp.Models.Societe
+
+@{
+    ViewData["Title"] = "Details";
+}
+    @if (User.Identity.IsAuthenticated)
+{
+    <h1>Details Societe </h1>
+    <hr />
+    <br />
+
+    <div>
+
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Lib)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Lib)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Adresse)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Adresse)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Tel)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Tel)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+}

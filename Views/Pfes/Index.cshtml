@@ -1,0 +1,70 @@
+﻿@model IEnumerable<PfeApp.Models.Pfe>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    @if (User.Identity.IsAuthenticated)
+{
+
+    <p>
+        <a asp-action="Create"><i class="fa fa-user-plus" aria-hidden="true"></i> Creer un Pfe</a>
+    </p>
+    <br />
+    <table id="myTable"  class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Desc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateD)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Encadrant)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Societe)
+                </th>
+                <th> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Desc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateD)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Encadrant.Nom)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Societe.Adresse)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id"> <i class="fa fa-eye" aria-hidden="true"></i>  </a> |
+                        <a asp-action="Details" asp-route-id="@item.Id"><i class="fa fa-info-circle" aria-hidden="true"></i> </a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">  <i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </td>            
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
